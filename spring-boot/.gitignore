@@ -11,5 +11,4 @@ tmp/
 *.swp
 *~.nib
 local.properties
-*.properties
 .loadpath
