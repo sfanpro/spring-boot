@@ -13,4 +13,16 @@ public class MyRestController {
 	public String sayGoodMorning() {
 		return "Good morning! Time on server is " + LocalDateTime.now();
 	}
+
+	// expose a new endpoint for "workout"
+	@GetMapping("/workout")
+	public String getDailyWorkout() {
+		return "Be happy!";
+	}
+
+	// expose a new endpoint for "fortune"
+	@GetMapping("/fortune")
+	public String getDailyFortune() {
+		return "Today is your day of breakthrough!";
+	}
 }
